@@ -1,0 +1,26 @@
+{
+  "name": "chess-sample",
+  "version": "1.0.0",
+  "description": "sample chess code",
+  "author": {
+    "name": "Carter Medlin",
+    "email": "carter.medlin@gmail.com",
+    "url": "https://github.com/carterm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carterm/Chess-Sample.git"
+  },
+  "bugs": "https://github.com/carterm/Chess-Sample/issues",
+  "license": "MIT",
+  "scripts": {
+    "GIT cleanup": "git clean -fd"
+  },
+  "private": true,
+  "type": "commonjs",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-jsdoc": "^48.2.0",
+    "prettier": "^3.0.3"
+  }
+}
