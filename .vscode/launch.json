@@ -8,7 +8,7 @@
       "type": "chrome",
       "request": "launch",
       "name": "Open Chess.html",
-      "file": "${workspaceRoot}/Chess.html"
+      "file": "${workspaceRoot}/src/chess.html"
     }
   ]
 }
