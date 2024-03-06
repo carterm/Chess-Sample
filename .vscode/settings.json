@@ -6,7 +6,6 @@
   },
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
-  "prettier.documentSelectors": ["**/*.njk"],
   "emmet.includeLanguages": {
     "njk": "html"
   },
@@ -18,17 +17,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "css.validate": false,
-  "scss.validate": false,
-  "stylelint.validate": ["css", "scss"],
-  "search.useIgnoreFiles": true,
-  "markdown.styles": [
-    "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-  ],
-  "markdown.occurrencesHighlight.enabled": true,
-  "markdown.preferredMdPathExtensionStyle": "removeExtension",
-  "markdown.suggest.paths.enabled": true,
-  "markdown.validate.enabled": true,
-  "markdown.validate.referenceLinks.enabled": "error",
-  "markdown.updateLinksOnFileMove.enabled": "prompt",
-  "markdown.validate.ignoredLinks": ["{{- item.url -}}"]
+  "search.useIgnoreFiles": true
 }
