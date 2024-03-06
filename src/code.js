@@ -28,7 +28,6 @@ const boardData = [
  * @property {number} points
  */
 
-// eslint-disable-next-line no-unused-vars
 function load() {
   const gameboard = document.getElementById("gameboard");
   if (gameboard)
@@ -39,12 +38,14 @@ function load() {
 
         cell.setAttribute("x", x.toString());
         cell.setAttribute("y", y.toString());
-        cell.onclick = click;
+        cell.addEventListener("click", click);
         gameboard.appendChild(cell);
       }
 
   render();
 }
+
+window.addEventListener("load", load);
 
 function render() {
   document.querySelectorAll("#gameboard div").forEach((cell, i) => {
@@ -105,8 +106,10 @@ function setBoardValue(x, y, value) {
   boardData[8 * y + x] = value;
 }
 
+/**
+ * @this {HTMLDivElement}
+ */
 function click() {
-  /** @type {HTMLDivElement} */
   const target = this;
 
   const targetXY = getXYfromCell(target);
